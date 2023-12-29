@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Golden Marc</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- My Strings-->
+    <string name="welcome">Bienvenido</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="forgot_pass">¿Olvido su contraseña?</string>
+    <string name="havent_account">¿No tienes cuenta?</string>
+    <string name="entry">Entrar</string>
+    <string name="sent">Enviar</string>
+    <string name="sent_email">Ingresa tu correo</string>
+    <string name="create_account">Crea tu cuenta</string>
 </resources>

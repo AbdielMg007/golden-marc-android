@@ -1,12 +1,14 @@
 package com.mg.goldenmarc.data.remote.network
 
-import retrofit2.Call
-import retrofit2.http.GET
-import retrofit2.http.Url
+import com.mg.goldenmarc.data.model.UserCredentialsLogin
+import retrofit2.Response
+import retrofit2.http.Body
+import retrofit2.http.POST
 
 
 interface ApiClient {
 
-
+    @POST("auth/login")
+    suspend fun login(@Body request: UserCredentialsLogin): Response<UserCredentialsLogin>
 
 }
