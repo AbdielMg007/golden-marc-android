@@ -11,13 +11,13 @@ object ApiDbClient {
     private val client = OkHttpClient.Builder().build()
     private val baseUrl: String = R.string.api_url.toString()
 
-    private val getRetrofit = Retrofit.Builder()
+    private val retrofit = Retrofit.Builder()
         .baseUrl(baseUrl)
         .addConverterFactory(GsonConverterFactory.create())
         .client(client)
         .build()
 
-    val service = getRetrofit.create(ApiClient::class.java)
+    val service: ApiService = retrofit.create(ApiService::class.java)
 
 }
 
